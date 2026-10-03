@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hi Five — Know exactly what your body needs today</title>
+  <meta name="description" content="Hi Five brings food, movement and health records into one place — with a health buddy to chat with, daily nutrient targets, step tracking and blood reports." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="glows" aria-hidden="true">
+      <img class="glow glow--left" src="assets/glow-left.svg" width="1367" height="1367" alt="" />
+      <img class="glow glow--right" src="assets/glow-right.svg" width="1567" height="1567" alt="" />
+      <img class="glow glow--bottom" src="assets/glow-bottom.svg" width="2623" height="2623" alt="" />
+    </div>
+
+    <div class="page">
+      <a class="logo-link" href="#top" aria-label="Hi Five home">
+        <span class="mark" aria-hidden="true">
+          <span class="mark__hand"><span><img src="assets/hand.svg" width="59.4822" height="68.1995" alt="" /></span></span>
+          <span class="mark__smile"><span><img src="assets/smile.svg" width="19.8082" height="9.59915" alt="" /></span></span>
+        </span>
+      </a>
+
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <h1 class="hero__title">Hi Five</h1>
+        <p class="hero__tagline">Know exactly what your<br />body needs today.</p>
+
+        <form class="signup" id="signup" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input class="signup__input" id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+          <button class="signup__btn" type="submit">Get early access</button>
+        </form>
+        <p class="signup__msg" id="signup-msg" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="phone" aria-hidden="true">
+        <img src="assets/phone.png" width="1161" height="874" alt="" />
+      </div>
+
+      <!-- Features -->
+      <section class="features" id="features">
+        <h2 class="features__title">One place for food, movement and health records.</h2>
+        <div class="features__grid">
+          <article class="feature">
+            <h3>Chat with your health buddy</h3>
+            <p>Ask anything about food, habits or your numbers and get a straight answer.</p>
+          </article>
+          <article class="feature">
+            <h3>Daily nutrient targets</h3>
+            <p>Based on your goal, Hifive tells you how much protein, fibre and carbs you need each day.</p>
+          </article>
+          <article class="feature">
+            <h3>Step tracking</h3>
+            <p>Your daily steps sit next to your food, so you see the full picture.</p>
+          </article>
+          <article class="feature">
+            <h3>Blood reports in one place</h3>
+            <p>Upload your lab reports and keep every result together, ready when you need them.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Blood report promo -->
+      <section class="reports" id="reports">
+        <div class="reports__copy">
+          <h2>Your blood reports, explained by a doctor</h2>
+          <p>Not sure what your results mean? Book a personal consultation with a pathologist to understand your reports, ask questions, and know what to discuss with your doctor.</p>
+          <a class="btn-dark" href="#signup" data-focus-signup>Book a consultation today</a>
+        </div>
+
+        <div class="report" role="table" aria-label="Sample blood report">
+          <div class="report__head" role="row">
+            <span class="report__name" role="columnheader">Complete blood panel</span>
+            <span class="report__date" role="columnheader">12 Sep 2026</span>
+          </div>
+          <div class="report__row" role="row">
+            <span class="report__label" role="cell">Haemoglobin</span>
+            <span class="report__value" role="cell"><span class="report__num">13.8 g/dL</span><span class="badge badge--ok">Normal</span></span>
+          </div>
+          <div class="report__row" role="row">
+            <span class="report__label" role="cell">Vitamin D</span>
+            <span class="report__value" role="cell"><span class="report__num">18 ng/mL</span><span class="badge">Low</span></span>
+          </div>
+          <div class="report__row" role="row">
+            <span class="report__label" role="cell">HbA1c</span>
+            <span class="report__value" role="cell"><span class="report__num">5.9 %</span><span class="badge">Borderline</span></span>
+          </div>
+          <div class="report__row" role="row">
+            <span class="report__label" role="cell">LDL cholesterol</span>
+            <span class="report__value" role="cell"><span class="report__num">96 mg/dL</span><span class="badge badge--ok">Normal</span></span>
+          </div>
+          <span class="report__foot">Sample report</span>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="closing">
+        <span class="mark mark--lg" aria-hidden="true">
+          <span class="mark__hand"><span><img src="assets/hand-full.svg" width="64.7677" height="74.2073" alt="" /></span></span>
+        </span>
+        <h2 class="closing__title">Start goal with a health buddy</h2>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
